@@ -1,0 +1,32 @@
+@import 'src/assets/styles/colors';
+
+.home {
+  .card {
+    border-radius: 30px;
+  }
+  &__cc-form {
+    background-color: $blue;
+    border-radius: 30px 0 0 30px;
+  }
+  &__cc-list {
+    border-radius: 30px 0 0 30px;
+  }
+}
+// import styled from 'styled-components';
+
+// export const HomeContainer = styled.div`
+//   border-radius: 30px;
+//   height: 100%;
+// `;
+
+// export const CCFormContainer = styled.div`
+//   background-color: #4488dd;
+//   border-radius: 30px 0 0 30px;
+//   height: 100%;
+// `;
+
+// export const CCListContainer = styled.div`
+//   background-color: white;
+//   border-radius: 0px 30px 30px 0;
+//   height: 100%;
+// `;
