@@ -1,6 +1,7 @@
 import React from 'react';
 import CardIcon from './CardIcon';
 import './CardItem.scss';
+import { shape, string } from 'prop-types';
 
 export const CardItem = ({ card: { name, cardNumber, limit, expiryDate } }) => {
   return (
@@ -20,4 +21,13 @@ export const CardItem = ({ card: { name, cardNumber, limit, expiryDate } }) => {
       <div className='line'></div>
     </div>
   );
+};
+
+CardItem.propTypes = {
+  card: shape({
+    name: string,
+    cardNumber: string,
+    limit: string,
+    expiryDate: string
+  }).isRequired
 };

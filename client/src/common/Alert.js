@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
+import { string, bool } from 'prop-types';
 import { useSelector } from 'react-redux';
 import shortid from 'shortid';
 
-const AlertItem = ({ msg, active, type = 'danger' }) => {
+const AlertItem = ({ msg, active, type }) => {
   const [closed, setClosed] = useState(!active);
 
   const closeAlert = () => {
@@ -29,6 +30,16 @@ const AlertItem = ({ msg, active, type = 'danger' }) => {
       )}
     </>
   );
+};
+
+AlertItem.propTypes = {
+  msg: string.isRequired,
+  active: bool.isRequired,
+  type: string
+};
+
+AlertItem.defaultProps = {
+  type: 'danger'
 };
 
 const Alert = () => {

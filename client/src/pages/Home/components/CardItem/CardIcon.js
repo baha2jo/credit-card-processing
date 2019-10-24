@@ -1,4 +1,5 @@
 import React from 'react';
+import { string } from 'prop-types';
 import { getCardType } from './card.helper';
 
 import { ReactComponent as Visa } from 'assets/svgs/visa.svg';
@@ -27,4 +28,9 @@ const CardIcon = ({ number }) => {
 
   return <>{renderCardIcon()}</>;
 };
+
+CardIcon.propTypes = {
+  number: string.isRequired
+};
+
 export default CardIcon;
