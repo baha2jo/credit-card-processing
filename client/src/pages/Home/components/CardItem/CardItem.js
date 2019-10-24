@@ -1,21 +1,21 @@
 import React from 'react';
-import { ReactComponent as Visa } from 'assets/svgs/visa.svg';
+import CardIcon from './CardIcon';
 import './CardItem.scss';
 
-export const CardItem = () => {
+export const CardItem = ({ card: { name, cardNumber, limit, expiryDate } }) => {
   return (
     <div className='card-item'>
       <div className='d-flex align-items-center'>
         <span className='card-item__icon mr-4'>
-          <Visa />
+          <CardIcon number={cardNumber} />
         </span>
         <div>
-          <p className='mb-0'>4444 5555 6666 4444</p>
-          <p className='mb-0'>Bahaa Almomani</p>
-          <small class='text-muted'>12/22</small>
+          <p className='mb-0'>{cardNumber}</p>
+          <p className='mb-0'>{name}</p>
+          <small className='text-muted'>{expiryDate}</small>
         </div>
       </div>
-      <p class='text-right text-info'>0$</p>
+      <p className='text-right text-info'>{limit}$</p>
 
       <div className='line'></div>
     </div>

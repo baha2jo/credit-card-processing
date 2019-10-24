@@ -1,12 +1,18 @@
 import React from 'react';
 import { Router } from './routes';
+import { Provider } from 'react-redux';
+import store from './store';
+import Alert from './common/Alert';
 import './App.scss';
 
 function App() {
   return (
-    <div className='App'>
-      <Router />
-    </div>
+    <Provider store={store}>
+      <div className='App'>
+        <Alert />
+        <Router />
+      </div>
+    </Provider>
   );
 }
 
