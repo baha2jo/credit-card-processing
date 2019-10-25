@@ -22,6 +22,11 @@ export const CardsList = () => {
             <CardItem card={item} />
           </div>
         ))}
+        {cards.length === 0 && (
+          <h3 className='text-center mt-4 font-weight-lighter'>
+            No Cards Available
+          </h3>
+        )}
       </div>
     </div>
   );

@@ -10,6 +10,10 @@ $border-radius: 10px;
   &__cc-form {
     background-color: $blue;
     border-radius: $border-radius 0 0 $border-radius;
+    min-height: 700px;
+    @media only screen and (max-width: 768px) {
+      border-radius: $border-radius $border-radius 0 0;
+    }
   }
   &__cc-list {
     border-radius: $border-radius 0 0 $border-radius;

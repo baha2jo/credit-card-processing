@@ -4,6 +4,7 @@ import { ReactComponent as Logo } from 'assets/svgs/credit-card.svg';
 import useForm from 'react-hook-form';
 import useAction from 'hooks/useAction';
 import { addCard } from 'actions/card.action';
+import './CardForm.scss';
 
 export const CardForm = () => {
   const { register, handleSubmit, errors, reset } = useForm(); // initialise the hook
@@ -21,8 +22,8 @@ export const CardForm = () => {
 
   return (
     <div className='h-100 d-flex flex-column pb-4'>
-      <div className='h-25 mb-5'>
-        <span>
+      <div className='h-25 mb-5 text-center'>
+        <span className='logo'>
           <Logo />
         </span>
       </div>
