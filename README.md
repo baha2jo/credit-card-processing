@@ -23,7 +23,7 @@ For development, you will only need Node.js and a node global package, NPM, inst
     $ cd credit-card-processing
     $ npm run dev
 
-This command will run both server and client
+This command will run both server and client.
 open http://localhost:3000 in your browser
 
 ## Running the client test
