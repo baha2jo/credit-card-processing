@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardsList component should render correctly 1`] = `
+<Provider
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <CardsList>
+    <div
+      className="mt-4 h-100 overflow-auto"
+    >
+      <h4
+        className="text-center font-weight-lighter"
+      >
+        Cards List
+      </h4>
+      <div
+        className="line"
+      />
+      <div
+        className="h-100 overflow-auto"
+      >
+        <CardItem
+          card={
+            Object {
+              "_id": "2QCfp3SjZ7bMo1gi",
+              "cardNumber": "4970856264139166",
+              "expiryDate": "12/21",
+              "limit": "122",
+              "name": "3213",
+            }
+          }
+          key="2QCfp3SjZ7bMo1gi"
+        >
+          <div
+            className="card-item"
+          >
+            <div
+              className="d-flex align-items-center"
+            >
+              <span
+                className="card-item__icon mr-4"
+              >
+                <CardIcon
+                  number="4970856264139166"
+                >
+                  <ForwardRef(SvgVisa)>
+                    <svg>
+                      visa.svg
+                    </svg>
+                  </ForwardRef(SvgVisa)>
+                </CardIcon>
+              </span>
+              <div>
+                <p
+                  className="mb-0"
+                >
+                  4970856264139166
+                </p>
+                <p
+                  className="mb-0"
+                >
+                  3213
+                </p>
+                <small
+                  className="text-muted"
+                >
+                  12/21
+                </small>
+              </div>
+            </div>
+            <p
+              className="text-right text-info"
+            >
+              122
+              $
+            </p>
+            <div
+              className="line"
+            />
+          </div>
+        </CardItem>
+      </div>
+    </div>
+  </CardsList>
+</Provider>
+`;
