@@ -53,9 +53,9 @@ export const CardForm = () => {
             )}
           </div>
           <div className='row'>
-            <div className='form-group col'>
+            <div className='form-group col-md-6 col-sm-12'>
               <label htmlFor='expiry-date' className='text-light mb-1'>
-                Expiry Date (MM/YY)
+                Expiry Date <small>(MM/YY)</small>
               </label>
               <input
                 type='text'
@@ -75,7 +75,7 @@ export const CardForm = () => {
                 </small>
               )}
             </div>
-            <div className='form-group col'>
+            <div className='form-group col-md-6 col-sm-12'>
               <label htmlFor='limit' className='text-light mb-1'>
                 Limit
               </label>
