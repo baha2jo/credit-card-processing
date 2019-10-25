@@ -28,66 +28,70 @@ exports[`CardsList component should render correctly 1`] = `
       <div
         className="h-100 overflow-auto"
       >
-        <CardItem
-          card={
-            Object {
-              "_id": "2QCfp3SjZ7bMo1gi",
-              "cardNumber": "4970856264139166",
-              "expiryDate": "12/21",
-              "limit": "122",
-              "name": "3213",
-            }
-          }
+        <div
+          className="card-item"
           key="2QCfp3SjZ7bMo1gi"
         >
-          <div
-            className="card-item"
+          <CardItem
+            card={
+              Object {
+                "_id": "2QCfp3SjZ7bMo1gi",
+                "cardNumber": "4970856264139166",
+                "expiryDate": "12/21",
+                "limit": "122",
+                "name": "3213",
+              }
+            }
           >
             <div
-              className="d-flex align-items-center"
+              className="card-item"
             >
-              <span
-                className="card-item__icon mr-4"
+              <div
+                className="d-flex align-items-center"
               >
-                <CardIcon
-                  number="4970856264139166"
+                <span
+                  className="card-item__icon mr-4"
                 >
-                  <ForwardRef(SvgVisa)>
-                    <svg>
-                      visa.svg
-                    </svg>
-                  </ForwardRef(SvgVisa)>
-                </CardIcon>
-              </span>
-              <div>
-                <p
-                  className="mb-0"
-                >
-                  4970856264139166
-                </p>
-                <p
-                  className="mb-0"
-                >
-                  3213
-                </p>
-                <small
-                  className="text-muted"
-                >
-                  12/21
-                </small>
+                  <CardIcon
+                    number="4970856264139166"
+                  >
+                    <ForwardRef(SvgVisa)>
+                      <svg>
+                        visa.svg
+                      </svg>
+                    </ForwardRef(SvgVisa)>
+                  </CardIcon>
+                </span>
+                <div>
+                  <p
+                    className="mb-0 card-number"
+                  >
+                    4970856264139166
+                  </p>
+                  <p
+                    className="mb-0 card-holder"
+                  >
+                    3213
+                  </p>
+                  <small
+                    className="text-muted card-expiry"
+                  >
+                    12/21
+                  </small>
+                </div>
               </div>
+              <p
+                className="text-right text-info card-limit"
+              >
+                122
+                $
+              </p>
+              <div
+                className="line"
+              />
             </div>
-            <p
-              className="text-right text-info"
-            >
-              122
-              $
-            </p>
-            <div
-              className="line"
-            />
-          </div>
-        </CardItem>
+          </CardItem>
+        </div>
       </div>
     </div>
   </CardsList>

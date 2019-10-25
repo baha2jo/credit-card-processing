@@ -13,7 +13,7 @@ function setup() {
     ]
   });
 
-  return { wrapper: global.mockRender(store, <CardsList />) };
+  return { wrapper: mockRender(store, <CardsList />) };
 }
 
 describe('CardsList component', () => {

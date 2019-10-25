@@ -18,7 +18,9 @@ export const CardsList = () => {
       <div className='line'></div>
       <div className='h-100 overflow-auto'>
         {cards.map(item => (
-          <CardItem card={item} key={item._id} />
+          <div className='card-item' key={item._id}>
+            <CardItem card={item} />
+          </div>
         ))}
       </div>
     </div>

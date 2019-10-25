@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardItem component should render correctly 1`] = `
+<div
+  className="card-item"
+>
+  <div
+    className="d-flex align-items-center"
+  >
+    <span
+      className="card-item__icon mr-4"
+    >
+      <CardIcon
+        number="4970856264139166"
+      />
+    </span>
+    <div>
+      <p
+        className="mb-0 card-number"
+      >
+        4970856264139166
+      </p>
+      <p
+        className="mb-0 card-holder"
+      >
+        3213
+      </p>
+      <small
+        className="text-muted card-expiry"
+      >
+        12/21
+      </small>
+    </div>
+  </div>
+  <p
+    className="text-right text-info card-limit"
+  >
+    122
+    $
+  </p>
+  <div
+    className="line"
+  />
+</div>
+`;

@@ -20,3 +20,5 @@ global.mockStore = configureStore([thunk]);
 // Redux + Theme
 global.mockRender = (store, component) =>
   mount(<Provider store={store}>{component}</Provider>);
+
+global.fetch = require('jest-fetch-mock');

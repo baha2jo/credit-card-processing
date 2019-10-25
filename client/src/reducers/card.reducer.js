@@ -1,6 +1,6 @@
 import { FETCH_CARDS, ADD_CARD } from '../actions/types';
 
-const initialState = [];
+export const initialState = [];
 
 const cardReducer = (state = initialState, { type, payload }) => {
   switch (type) {

@@ -1,6 +1,6 @@
 import { SHOW_ALERT } from '../actions/types';
 
-const initialState = { alertType: '', messages: [] };
+export const initialState = { alertType: '', messages: [] };
 
 const alertReducer = (state = initialState, { type, payload }) => {
   switch (type) {
