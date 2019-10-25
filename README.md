@@ -2,7 +2,7 @@
 
 A sample node app with react allow you to add credit cards and display them.
 
-[live demo]: https://blooming-fjord-36052.herokuapp.com/home
+[live demo](https://blooming-fjord-36052.herokuapp.com/home)
 
 ---
 
@@ -20,6 +20,7 @@ For development, you will only need Node.js and a node global package, NPM, inst
 
 ## Running the project
 
+    $ cd credit-card-processing
     $ npm run dev
 
 ## Running the client test
