@@ -5,7 +5,7 @@ exports[`Home Page should render correctly 1`] = `
   className="container home h-100 d-flex justify-content-center"
 >
   <div
-    className="card h-75 w-100 mt-5"
+    className="card h-75 w-100 mt-5 mb-5"
   >
     <div
       className="card-body p-0 h-100"
@@ -14,12 +14,12 @@ exports[`Home Page should render correctly 1`] = `
         className="row m-0 h-100"
       >
         <div
-          className="col home__cc-form h-100 "
+          className="col-md-6 col-sm-12 home__cc-form  "
         >
           <CardForm />
         </div>
         <div
-          className="col home__cc-list h-100 pb-5"
+          className="col-md-6 col-sm-12 home__cc-list h-100 pb-5"
         >
           <CardsList />
         </div>

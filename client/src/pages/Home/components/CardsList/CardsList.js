@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 import { CardItem } from '../CardItem';
 import { fetchCards } from 'actions/card.action';
 import useAction from 'hooks/useAction';
+import './CardsList.scss';
 
 export const CardsList = () => {
   const [fetchCardsAction] = useAction(fetchCards);
@@ -16,7 +17,7 @@ export const CardsList = () => {
     <div className='mt-4 h-100 overflow-auto'>
       <h4 className='text-center font-weight-lighter'>Cards List</h4>
       <div className='line'></div>
-      <div className='h-100 overflow-auto'>
+      <div className='h-100 overflow-auto cards-list'>
         {cards.map(item => (
           <div className='card-item' key={item._id}>
             <CardItem card={item} />
