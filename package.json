@@ -13,7 +13,7 @@
   "author": "Bahaa Almomani",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-validator": "^6.2.0",
     "luhn": "^2.4.0",
     "nedb": "^1.8.0"
